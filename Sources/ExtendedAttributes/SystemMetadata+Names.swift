@@ -1,5 +1,6 @@
 import Foundation
 
+#if os(macOS)
 extension SystemMetadata.Name {
 	// MARK: - Creator Information
 
@@ -159,3 +160,4 @@ extension SystemMetadata.Name {
 		.init(kMDItemLastUsedDate as String, type: Date.self)
 	}
 }
+#endif
